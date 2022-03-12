@@ -61,11 +61,13 @@ nav a.router-link-exact-active {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #footer a {
   color: #393d3f;
   text-decoration: none;
+  padding: 10px;
 }
 </style>
