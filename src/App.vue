@@ -5,6 +5,9 @@
       <router-link to="/about">About</router-link>
     </nav>
     <router-view/>
+    <div id="footer">
+      <a href="https://github.com/cailynbos/creative-project3">GitHub link</a>
+    </div>
   </div>
 </template>
 
@@ -28,5 +31,9 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+#footer {
+  text-align: left;
 }
 </style>
