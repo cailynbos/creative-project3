@@ -7,6 +7,7 @@
             <div class="info">
                 <p class="title">{{ book.title }}</p>
                 <p class="author">{{ book.author }}</p>
+                <p class="desc">{{ book.description }}</p>
             </div>
         </div>
     </div>
@@ -36,6 +37,7 @@ export default {
 .info {
     margin-top: 20px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .title {
@@ -47,12 +49,22 @@ export default {
     color: #62929e;
 }
 
+.desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    line-clamp: 12;
+    -webkit-box-orient: vertical;
+}
+
 
 @media (min-width: 48em) {
     .book-list {
         display: grid;
         grid-auto-flow: row;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        margin: 30px 20px;
     }
 
     .book {
@@ -67,12 +79,20 @@ export default {
     }
 
     .info {
-        margin-top: 0px;
-        margin-left: 20px;
+        margin: 0px;
     }
 
     .title {
         font-weight: bold;
+        margin-left: 20px;
+    }
+
+    .author {
+        margin-left: 40px;
+    }
+
+    .desc {
+        margin-left: 10px;
     }
 }
 </style>
