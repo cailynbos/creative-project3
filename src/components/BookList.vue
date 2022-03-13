@@ -23,6 +23,10 @@ export default {
 </script>
 
 <style scoped>
+.book-list {
+    margin-bottom: 20px;
+}
+
 .book {
     display: flex;
     flex-direction: row;

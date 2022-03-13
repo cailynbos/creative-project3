@@ -10,9 +10,7 @@
         <router-link to="/fantasy">Fantasy</router-link>
       </nav>
     </div>
-    <div class="content">
-      <router-view />
-    </div>
+    <router-view />
     <div class="footer">
       <a href="https://github.com/cailynbos/creative-project3">GitHub link</a>
     </div>
@@ -64,22 +62,17 @@ nav a.router-link-exact-active {
   color: #62929e;
 }
 
-.content {
-  flex: 1;
-}
-
 .footer {
   text-align: left;
   background-color: #c6c5b9;
   height: 20px;
   width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer a {
   color: #393d3f;
-  text-decoration: none;
   padding: 10px;
 }
 
