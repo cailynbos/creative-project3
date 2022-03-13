@@ -1,7 +1,9 @@
 <template>
   <div id="app">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <div class="header">
-      <h1>Book Recs</h1>
+      <h1 class="name">Book Recs</h1>
       <nav>
         <router-link to="/">All Books</router-link> |
         <router-link to="/scifi">Sci-fi</router-link> |
@@ -39,7 +41,7 @@ html, body {
   text-align: center;
 }
 
-.header h1 {
+.name {
   margin-top: 0px;
   padding-top: 20px;
 }
@@ -48,6 +50,7 @@ nav {
   margin: 0px;
   padding: 10px;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 
@@ -78,5 +81,25 @@ nav a.router-link-exact-active {
   color: #393d3f;
   text-decoration: none;
   padding: 10px;
+}
+
+
+@media (min-width: 48em) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+  }
+
+  .name {
+    margin-left: 40px;
+  }
+
+  nav {
+    margin-right: 40px;
+    width: 250px;
+  }
 }
 </style>
