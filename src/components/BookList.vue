@@ -46,14 +46,19 @@ export default {
 
 .title {
     font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0px;
 }
 
 .author {
+    margin-top: 10px;
     margin-left: 20px;
     color: #62929e;
+    font-size: 1.05em;
 }
 
 .desc {
+    margin-top: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
