@@ -1,5 +1,5 @@
 <template>
-  <div class="scifi-books">
+  <div class="fantasy-books">
     <BookList :books="books" />
   </div>
 </template>
@@ -8,16 +8,17 @@
 import BookList from '@/components/BookList.vue'
 
 export default {
-  name: 'ScifiView',
+  name: 'FantasyView',
   components: {
       BookList
   },
   computed: {
       books() {
           return this.$root.$data.books.filter(
-              (book) => book.genre === 'scifi'
+              (book) => book.genre === "fantasy"
           );
       }
   }
 }
 </script>
+
